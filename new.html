@@ -1,0 +1,279 @@
+   <!DOCTYPE html>
+   <html>
+    <head>
+        <style>
+           
+
+           *, body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+.button {
+  background-color: #202122;
+  border: none;
+  color: white;
+  padding-top: 15px ;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 4px;
+  margin-left: 2px;
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+html, body {
+    height: 100%;
+    background-color: #333535;
+    
+}
+
+
+.form-holder {
+       
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+}
+
+.form-holder .form-content {
+    
+    position: relative;
+    text-align: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 300px;
+    padding-right: 300px;
+   
+}
+
+.form-content .form-items {
+    background-color: rgb(35, 63, 68);
+    border: 3px solid #fff;
+    padding-top: 0px;
+    padding-right: 80px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    display: inline-block;
+    width: 100%;
+    min-width: 540px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-align: left;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.form-content h1 {
+    color: #fff;
+    text-align: left;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom:10px;
+}
+
+.form-content h1.form-title {
+    margin-bottom: 20px;
+}
+
+.form-content h3 {
+    color: #fff;
+    text-align: left;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom:5px;
+}
+
+.form-content h3.form-title {
+    margin-bottom: 20px;
+}
+
+.form-content p {
+    color: #fff;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+
+.form-content label, .was-validated .form-check-input:invalid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
+    color: #fff;
+}
+
+.form-content input[type=text], .form-content input[type=password], .form-content input[type=email],.form-content input[type=num], .form-content input[type=date],.form-content select {
+    width: 100%;
+    padding: 9px 20px;
+    text-align: left;
+    border: 0;
+    outline: 0;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    color: #8D8D8D;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-top: 16px;
+}
+
+
+.btn-primary{
+    background-color: #6C757D;
+    outline: none;
+    border: 0px;
+     box-shadow: none;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
+    background-color: #495056;
+    outline: none !important;
+    border: none !important;
+     box-shadow: none;
+}
+
+.form-content textarea {
+    position: static !important;
+    width: 100%;
+    padding: 8px 20px;
+    border-radius: 6px;
+    text-align: left;
+    background-color: #fff;
+    border: 0;
+    font-size: 15px;
+    font-weight: 300;
+    color: #8D8D8D;
+    outline: none;
+    resize: none;
+    height: 120px;
+    -webkit-transition: none;
+    transition: none;
+    margin-bottom: 14px;
+}
+
+.form-content textarea:hover, .form-content textarea:focus {
+    border: 0;
+    background-color: #ebeff8;
+    color: #8D8D8D;
+}
+
+.mv-up{
+    margin-top: -9px !important;
+    margin-bottom: 8px !important;
+}
+
+.invalid-feedback{
+    color: #ff606e;
+}
+
+.valid-feedback{
+   color: #2acc80;
+}
+        </style>
+        <title>Apc Global IT Services </title>
+    </head>
+    <body>
+
+        <div class="form-body">
+            <div class="row">
+                <div class="form-holder">
+                    <h1 style="color: #fff;
+                    text-align: left;
+                    font-size: 35px;
+                    font-weight: 600;
+                    margin-bottom:5px;">APC Global IT Services</h1>
+                    <div class="form-content">
+                        <div class="form-items">
+                            <h3>Register Today</h3>
+                            
+                            <form onsubmit="value()">
+    
+                                <div class="col-md-12" style="padding-left: 10px;
+                                width: 300px;">
+                                   
+                                  <p style="margin-bottom: 5px;">Enter Full Name:</p><input class="form-control" type="text" id="demo" name="studentName" placeholder="Full Name" required style="margin-top: 1px;">
+                                   
+                                
+                               
+                                  <p style="margin-bottom: 5px;">Enter Phonenumber:</p> <input class= "form-control" type="num" id="demo1"  name="studentPhone" pattern="[0-9]{10}" placeholder="Phone number" required style="margin-top: 1px;">
+                                
+                                  <p style="margin-bottom: 5px;">Enter Email id:</p> <input class="form-control" type="email" id="demo2" name="studentEmail" placeholder="E-mail Address" required style="margin-top: 1px;">
+                                    
+                                
+                                    <p style="margin-bottom: 5px;">Enter Date of birth:</p>  <input class= "form-control" type="date" id="demo3"  name="studentDOB" placeholder="dare of birth" required style="margin-top: 1px;">
+                                
+                                    <p style="margin-bottom: 5px;">Enter Aadhar number:</p>  <input class= "form-control" type="num" id="demo4"  name="studentAadhar" pattern="[0-9]{12}"    placeholder="Aadhar" required style="margin-top: 1px;">
+                                
+                                    <p style="margin-bottom: 5px;">Enter PAN:</p>  <input class= "form-control" type="text" id="demo5"  name="studentPan" placeholder="Pan" required style="margin-top: 1px;">
+                        
+                                    <p style="margin-bottom: 5px;">Enter Position:</p>  <select class="form-select mt-3" id="demo6"  name="studentInterntype" style="margin-top: 1px;">
+                                          <option selected disabled value="">Position</option>
+                                          <option >WFO</option>
+                                          <option >WFH</option>
+                                          
+                                   </select>
+                                   <p style="margin-bottom: 5px;">Enter Gender:</p>  <select class="form-select mt-3" id="demo7" name="studentGender" required style="margin-top: 1px;">
+                                    <option selected disabled value="">Gender</option>
+                                    <option >Male</option>
+                                    <option >Female</option>
+                                    
+                             </select>
+                             <p style="margin-bottom: 5px;">Enter Address:</p>  <textarea class= "form-control" type="text" id="demo5" rows="5" cols="50" name="studentlocation" placeholder="Address" required style="margin-top: 1px;"></textarea>
+                     
+    
+                                    <button id="submit" type="submit" class="button">Register</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+        function value(){
+            var name=document.getElementById("demo").value;
+            var number=document.getElementById("demo1").value;
+            var email=document.getElementById("demo2").value;
+            var DOB=document.getElementById("demo3").value;
+            var Aa=document.getElementById("demo4").value;
+            var pa=document.getElementById("demo5").value;
+            var po=document.getElementById("demo6").value;
+            var gen=document.getElementById("demo7").value;
+            document.write("FullName : "+name +"<br>");
+            document.write("Phonenumber : "+number +"<br>");
+            document.write("email : "+email +"<br>");
+       
+            document.write("DOB : "+DOB +"<br>");
+         
+            document.write("Aadhar : "+Aa +"<br>");
+          
+            document.write("Pan : "+pa +"<br>");
+            document.write("position: "+po +"<br>");
+            document.write("Gender : "+gen +"<br>");
+
+        }
+        </script>
+
+    </body>
+   </html>
